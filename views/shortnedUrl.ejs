@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shortened URL</title>
+    <link rel="stylesheet" href="/home.css" type="text/css"/>
 </head>
 <body>
-    <h1>Shortened URL</h1>
-    <p>Here is your shortened URL:</p>
-    <a href="<%= shortUrl %>"><%= shortUrl %></a>
+    <div class="container">
+        <h1>Shortened URL</h1>
+        <p>Here is your shortened URL:</p>
+        <a href="<%= shortUrl %>"><%= shortUrl %></a>
 
-    <p><a href="/home">Go back to home page</a></p>
+        <p class="success-message">Successfully created Short URL</p>
+
+        <p><a href="/home">Go back to home page</a></p>
+    </div>
 </body>
 </html>

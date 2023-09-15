@@ -23,6 +23,7 @@ app.get('/favicon.ico', (req, res) => {
   
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
+app.use(express.static(path.join(__dirname, '/public')));
 
 // Serve an HTML page with a form for URL input
 app.get('/home', (req, res) => {
